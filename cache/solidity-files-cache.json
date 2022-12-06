@@ -965,8 +965,8 @@
       }
     },
     "test/Permit.t.sol": {
-      "lastModificationDate": 1670250047557,
-      "contentHash": "4f25bc0cf839c036976e3370623a41f5",
+      "lastModificationDate": 1670330373709,
+      "contentHash": "d193fb3831813e65777cbae5d1340f18",
       "sourceName": "test/Permit.t.sol",
       "solcConfig": {
         "settings": {
