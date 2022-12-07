@@ -94,4 +94,20 @@ contract DepositTest is Test {
         assertEq(token.allowance(owner, address(deposit)), type(uint256).max);
         assertEq(deposit.userBalances(owner), 1e18);
     }
+
+    function testDeposit() public {
+        assertEq(token.allowance(owner, address(deposit)), 0);
+
+        // 1st transaction
+        vm.prank(owner);
+        token.approve(address(deposit), 1e18);
+        assertEq(token.allowance(owner, address(deposit)), 1e18);
+
+        //2nd transaction
+        vm.prank(owner);
+        deposit.deposit(1e18);
+
+        assertEq(token.balanceOf(owner), 0);
+        assertEq(token.balanceOf(address(deposit)), 1e18);
+    }
 }
