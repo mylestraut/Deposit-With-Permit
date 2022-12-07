@@ -826,6 +826,50 @@
         }
       }
     },
+    "src/Deposit.sol": {
+      "lastModificationDate": 1670412303724,
+      "contentHash": "09bf074bd8748869d70174d4431f3ed0",
+      "sourceName": "src/Deposit.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/MockERC20.sol",
+        "src/SigUtils.sol"
+      ],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "Deposit": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Deposit.sol/Deposit.json"
+        }
+      }
+    },
     "src/MockERC20.sol": {
       "lastModificationDate": 1670247849678,
       "contentHash": "9c4ed8367ac5a27ab48b9d2cfdd97f14",
@@ -964,9 +1008,68 @@
         }
       }
     },
+    "test/Deposit.t.sol": {
+      "lastModificationDate": 1670412785565,
+      "contentHash": "2a7328318d01eff1007725efc6957e35",
+      "sourceName": "test/Deposit.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Common.sol",
+        "lib/forge-std/src/Components.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/Deposit.sol",
+        "src/MockERC20.sol",
+        "src/SigUtils.sol"
+      ],
+      "versionRequirement": "=0.8.17",
+      "artifacts": {
+        "DepositTest": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "Deposit.t.sol/DepositTest.json"
+        }
+      }
+    },
     "test/Permit.t.sol": {
-      "lastModificationDate": 1670330373709,
-      "contentHash": "d193fb3831813e65777cbae5d1340f18",
+      "lastModificationDate": 1670411279314,
+      "contentHash": "3dd9f59ba98f4eda2765f2cc1de6feb3",
       "sourceName": "test/Permit.t.sol",
       "solcConfig": {
         "settings": {

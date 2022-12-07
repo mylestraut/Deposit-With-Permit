@@ -4,6 +4,16 @@ import "lib/forge-std/src/Test.sol";
 import "src/MockERC20.sol";
 import "src/SigUtils.sol";
 
+/*------ Deposit Params ------*/
+// @param _amount The number of tokens to transfer
+// @param _owner The user signing the approval
+// @param _spender The user to transfer the tokens (ie this contract)
+// @param _value The number of tokens to appprove the spender
+// @param _deadline The timestamp the permit expires
+// @param _v The 129th byte and chain id of the signature
+// @param _r The first 64 bytes of the signature
+// @param _s Bytes 64-128 of the signature
+
 contract permitTest is Test {
     MockERC20 internal token;
     SigUtils internal sigUtils;
